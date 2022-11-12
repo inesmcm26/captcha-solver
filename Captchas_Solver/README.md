@@ -16,3 +16,8 @@ This projects is divided into 2 parts:
 <h3> Image processing </h3>
 
 Given the simplicity of the captcha images, the processing is done by extracting each digit the captcha and then train a CNN to identify each digit individualy
+
+<h3> How to run it </h3>
+1. Run the 'captcha_preprocessing.ipynb' file. Doing this will create two new folders with the extacted digits from both simple and harder captacha;
+2. Run the 'captchas_solver.ipynb' file to see simple captchas being solved;
+3. Run the 'harder_captchas_solver.ipynb' file to see a model solving harder captchas and then the same model updated using transfer learning solving the simple captchas.
