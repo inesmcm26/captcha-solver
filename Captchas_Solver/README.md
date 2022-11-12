@@ -13,6 +13,6 @@ This projects is divided into 2 parts:
 - generated_captcha_images: really simple captcha
 - kaggle-captchas: equal to the previous one, but with lower case letters
 
-<h3> Image processing
+<h3> Image processing </h3>
 
 Given the simplicity of the captcha images, the processing is done by extracting each digit the captcha and then train a CNN to identify each digit individualy
