@@ -32,7 +32,7 @@ In this file several steps are performed:
 ![ZEB8](results/example1.png)
 ![RP84](results/example2.png)
 
-<h3> Contributions </h3>
+<h2> Contributions </h2>
 
 Contributions are welcomed.
 A lot can be improved in this repository. Some suggestions include:
