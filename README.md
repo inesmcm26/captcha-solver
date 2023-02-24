@@ -27,7 +27,10 @@ In this file several steps are performed:
 4. Transfer learning: The model that trained on the harder data is used as the backbone of a new model that is also going to be used to solve simple captcha.
 5. The transfer learning model and the simple model performances are compared.
 
-<h3> Results </h3>
+<h2> Results </h2>
+
+![ZEB8](results/example1.png)
+![RP84](results/example2.png)
 
 <h3> Contributions </h3>
 
