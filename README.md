@@ -11,7 +11,7 @@ This projects is divided into 2 parts:
 <h3> Datasets
 
 - simple_captcha: really simple captcha
-- gard_captcha: similar to the previous one, but with lower case letters
+- hard_captcha: similar to the previous one, but with lower case letters
 
 <h3> Image processing </h3>
 
