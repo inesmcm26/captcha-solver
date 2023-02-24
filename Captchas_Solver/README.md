@@ -28,3 +28,11 @@ In this file several steps are performed:
 5. The transfer learning model and the simple model performances are compared.
 
 <h3> Results </h3>
+
+<h3> Contributions </h3>
+
+Contributions are welcomed.
+A lot can be improved in this repository. Some suggestions include:
+- Defining a custom data generator to feed training and validation sets when fit method is called.
+- Improving the hard captcha preprocessing, adding new methods to extract each character.
+- Improve the models architecture and hyperparameters to improve performance.
