@@ -114,7 +114,7 @@ def img2boxes(img, conjoined_condition, num_chars, cv2_chain):
 
     return char_bound_boxes
 
-def img2chars(img_path):
+def find_chars(img_path):
     """
     Detects the characters in the captcha image
     """

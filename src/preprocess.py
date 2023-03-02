@@ -5,7 +5,6 @@ from imutils import paths, resize
 from sklearn.preprocessing import LabelBinarizer
 import matplotlib.pyplot as plt
 import pickle
-from char_detection import simple_preprocess, img2boxes
 
 def load_chars(img_folder):
     """
