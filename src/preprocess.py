@@ -13,8 +13,7 @@ def load_chars(img_folder):
     data = []
     labels = []
     # loop over the input images
-    for i, image_file in enumerate(paths.list_images(img_folder)):
-        
+    for i, image_file in enumerate(paths.list_images(img_folder)):        
         # Load the image and convert it to grayscale
         img = cv2.imread(image_file)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

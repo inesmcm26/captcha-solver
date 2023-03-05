@@ -114,17 +114,24 @@ def img2boxes(img, conjoined_condition, num_chars, cv2_chain):
 
     return char_bound_boxes
 
-def find_chars(img_path):
+def find_chars(img_path, simple = True):
     """
     Detects the characters in the captcha image
     """
 
-    img, gray = simple_thresh(img_path)
+    if simple:
 
-    char_regions = img2boxes(img, lambda w, h: w / h > 1.25, num_chars = 4, cv2_chain = cv2.CHAIN_APPROX_SIMPLE)
+        img, gray = simple_thresh(img_path)
+
+        char_regions = img2boxes(img, lambda w, h: w / h > 1.25, num_chars = 4, cv2_chain = cv2.CHAIN_APPROX_SIMPLE)
+    else:
+
+        img, gray = complex_thresh(img_path)
+
+        char_regions = img2boxes(img, lambda w, h: (((w / h) > 1.35) and (w > 22)) or (h > 28), num_chars = 10, cv2_chain = cv2.CHAIN_APPROX_NONE)
 
     if char_regions is None:
-        return None
+        return None, None
     
     chars = []
 
